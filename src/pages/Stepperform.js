@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     }));
 
 function getSteps() {
-  return ['Select customers', 'Select fields', 'Select programs', 'Config trial', 'Preview', 'Submit proposal' ];
+  return ['Catch the elephants', 'Choose one or more elephants', 'Let the elephant in', 'preview', 'wait', 'Close the door' ];
 }
 
 function getStepContent(step) {
@@ -217,7 +217,7 @@ function Stepperform() {
       <div >
         <CssBaseline />
         <Container maxWidth="sm">
-          <h1>Form</h1>
+          <h1>How to put an elephant into a fridge</h1>
             <HorizontalLinearStepper />
         </Container>
       </div>

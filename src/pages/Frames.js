@@ -34,7 +34,11 @@ function Frames(props) {
 
   return (
     <div className={classes.root}>
+      
       <CssBaseline />
+      <Typography variant="h4" >
+        This is how you can embed all kinds of iframes for your prototype
+      </Typography>
       <Grid item xs={12}>
       <Typography variant="h4" >
         Slide deck

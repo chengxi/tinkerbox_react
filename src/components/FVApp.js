@@ -173,7 +173,7 @@ export default function FVApp() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Product / Application Name (FV2)
+            FriendView 10
           </Typography>
            {/*navbar  */}
            {/* temporarily remove auth0 2020/6/24 */} 
@@ -233,7 +233,7 @@ export default function FVApp() {
             <ListItemIcon>
               <AssessmentIcon />
             </ListItemIcon>
-            <ListItemText>Reports</ListItemText>
+            <ListItemText>Metrics</ListItemText>
           </ListItem>
           <ListItem 
             button
@@ -244,7 +244,7 @@ export default function FVApp() {
             <ListItemIcon>
                 <MapIcon />
               </ListItemIcon>
-            <ListItemText>My Fields</ListItemText>
+            <ListItemText>My areas</ListItemText>
           </ListItem>
           <ListItem
               button
@@ -255,19 +255,25 @@ export default function FVApp() {
             <ListItemIcon>
                   <DoubleArrowIcon />
                 </ListItemIcon>
-              <ListItemText>Ag Workflow</ListItemText>
+              <ListItemText>Workflow</ListItemText>
             </ListItem>
           </List>
+
+          <ListItem
+              button
+              component={Link}
+              to="/cam"
+              onClick={onItemClick("Cam")}
+            >
+            <ListItemIcon>
+                  <PhotoCameraIcon />
+                </ListItemIcon>
+              <ListItemText>Cam</ListItemText>
+            </ListItem>
+            
           <Divider />
           <List>
-          <ListItem
-            button
-          >
-            <ListItemIcon>
-              <PeopleIcon />
-            </ListItemIcon>
-            <ListItemText>Customers</ListItemText>
-          </ListItem>
+          
           <ListItem
             button
             component={Link}
@@ -277,7 +283,7 @@ export default function FVApp() {
             <ListItemIcon>
               <MonetizationOnIcon />
             </ListItemIcon>
-            <ListItemText>Programs</ListItemText>
+            <ListItemText>iFrames</ListItemText>
           </ListItem>
           </List>
           <Divider />
@@ -316,23 +322,8 @@ export default function FVApp() {
                 </ListItemIcon>
               <ListItemText>Sandbox</ListItemText>
             </ListItem>
-            <ListItem
-              button
-              component={Link}
-              to="/cam"
-              onClick={onItemClick("Cam")}
-            >
-            <ListItemIcon>
-                  <PhotoCameraIcon />
-                </ListItemIcon>
-              <ListItemText>Cam</ListItemText>
-            </ListItem>
-            {/* {['Setting', 'Help'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <SettingsIcon /> : <HelpIcon />}</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))} */}
+            
+            
           </List>
         </Drawer>
         <main className={classes.content}>

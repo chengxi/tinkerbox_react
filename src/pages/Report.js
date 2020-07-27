@@ -32,10 +32,12 @@ import { Animation } from '@devexpress/dx-react-chart';
 import { EventTracker } from '@devexpress/dx-react-chart';
 
 
+
+
 const columns = [
  {
   name:  "Field Name\nClient/ Farm",
-  label:  "Field Name/Client/ Farm",
+  label:  "Location Name",
   options: {
    filter: true,
    sort: true,
@@ -43,7 +45,7 @@ const columns = [
  },
  {
   name:  "Hybrid(s)\nPlanted",
-  label: "Hybrid(s) Planted",
+  label: "Plants",
   options: {
    filter: true,
    sort: false,
@@ -78,7 +80,7 @@ const columns = [
  },
  {
   name: "GDUs to date",
-  label: "GDUs to date",
+  label: "Sunshine units to date",
   options: {
    filter: true,
    sort: false,
@@ -87,7 +89,7 @@ const columns = [
  },
  {
   name: "Season rain to date in inches",
-  label: "Season rain to date in inches",
+  label: "Rainfall to date in inches",
   options: {
    filter: true,
    sort: false,
@@ -96,7 +98,7 @@ const columns = [
  },
  {
   name: "Severe weather events",
-  label: "Severe weather events",
+  label: "Bad weather ",
   options: {
    filter: true,
    sort: false,
@@ -105,7 +107,7 @@ const columns = [
  },
  {
   name: "Planters",
-  label: "Planters",
+  label: "Machines",
   options: {
    filter: true,
    sort: false,
@@ -124,7 +126,7 @@ const columns = [
 
  {
   name: "Seed brand",
-  label: "Seed brand",
+  label: "product brand",
   options: {
    filter: true,
    sort: false,
@@ -133,7 +135,7 @@ const columns = [
  },
  {
   name:  "Seed Treatment",
-  label:  "Seed Treatment",
+  label:  "product Treatment",
   options: {
    filter: true,
    sort: false,
@@ -153,7 +155,7 @@ const columns = [
 
 const data = [
   {
-      "Field Name\nClient/ Farm": "Homestead creek SE\nCreek Side Ranch, Hudson",
+      "Field Name\nClient/ Farm": "Garden in California",
       "Hybrid(s)\nPlanted": 4.0,
       "Acres\nArea Planted": 213.0,
       "Planting \nDate": "4/21\nstarted 4/20",
@@ -163,13 +165,13 @@ const data = [
       "Severe weather events": "",
       "Planters": 2.0,
       "Operators": 1.0,
-      "Seed brand": "Dekalb, Pioneer",
-      "Seed Treatment": "42-S Thiram,",
+      "Seed brand": "Kalbde, Neerpio",
+      "Seed Treatment": "42-S blahhhham,",
       "Total units (bags)": ""
   },
   {
-      "Field Name\nClient/ Farm": "subfield123",
-      "Hybrid(s)\nPlanted": "DKC 53-58RIIB",
+      "Field Name\nClient/ Farm": "Zoo in Seattle",
+      "Hybrid(s)\nPlanted": "KDC 51-58RIIB",
       "Acres\nArea Planted": 57.0,
       "Planting \nDate": "4/21\nstarted 4/20",
       "Average\nPopulation": 31000.0,
@@ -183,8 +185,8 @@ const data = [
       "Total units (bags)": ""
   },
   {
-      "Field Name\nClient/ Farm": "subfield123",
-      "Hybrid(s)\nPlanted": "DKC64-34RIB\n",
+      "Field Name\nClient/ Farm": "Yosemite playground 123",
+      "Hybrid(s)\nPlanted": "KCD-34RB\n",
       "Acres\nArea Planted": 63.0,
       "Planting \nDate": "4/21\nstarted 4/20",
       "Average\nPopulation": 28000.0,
@@ -198,8 +200,8 @@ const data = [
       "Total units (bags)": ""
   },
   {
-      "Field Name\nClient/ Farm": "subfield123",
-      "Hybrid(s)\nPlanted": "DKC55-84RIB",
+      "Field Name\nClient/ Farm": "Chuchu town",
+      "Hybrid(s)\nPlanted": "CKS-81RIB",
       "Acres\nArea Planted": 50.0,
       "Planting \nDate": "4/21\nstarted 4/20",
       "Average\nPopulation": 34000.0,
@@ -213,8 +215,8 @@ const data = [
       "Total units (bags)": ""
   },
   {
-      "Field Name\nClient/ Farm": "subfield123",
-      "Hybrid(s)\nPlanted": "DKC58-34RIB",
+      "Field Name\nClient/ Farm": "Titipo titipo",
+      "Hybrid(s)\nPlanted": "Grass-32RIB",
       "Acres\nArea Planted": 43.0,
       "Planting \nDate": "4/21\nstarted 4/20",
       "Average\nPopulation": 29500.0,
@@ -228,8 +230,8 @@ const data = [
       "Total units (bags)": ""
   },
   {
-      "Field Name\nClient/ Farm": "Homestead Creek SW\nCreek Side Ranch, Hudson",
-      "Hybrid(s)\nPlanted": "P0574AMXT",
+      "Field Name\nClient/ Farm": "Nesqually park",
+      "Hybrid(s)\nPlanted": "P05-74AMXT",
       "Acres\nArea Planted": 123.0,
       "Planting \nDate": "April 1 2018",
       "Average\nPopulation": 32000.0,
@@ -238,12 +240,12 @@ const data = [
       "Severe weather events": "",
       "Planters": 1.0,
       "Operators": 1.0,
-      "Seed brand": "Dekalb, Pioneer",
+      "Seed brand": "Kalbde, Neerpio",
       "Seed Treatment": "ABM127",
       "Total units (bags)": ""
   },
   {
-      "Field Name\nClient/ Farm": "South of Road\nCreek Side Ranch, Hudson",
+      "Field Name\nClient/ Farm": "Riverside park",
       "Hybrid(s)\nPlanted": 6.0,
       "Acres\nArea Planted": 245.0,
       "Planting \nDate": "April 1 2018",
@@ -253,13 +255,13 @@ const data = [
       "Severe weather events": "",
       "Planters": 1.0,
       "Operators": 1.0,
-      "Seed brand": "Dekalb, Pioneer",
-      "Seed Treatment": "Delavan, IL 2018. Lumialza\u2122 nematicide",
+      "Seed brand": "Kalbde, Neerpio",
+      "Seed Treatment": "Dnematicide",
       "Total units (bags)": ""
   },
   {
-      "Field Name\nClient/ Farm": "subfield123",
-      "Hybrid(s)\nPlanted": "DKC 53-58RIIB",
+      "Field Name\nClient/ Farm": "Jared Diamond park",
+      "Hybrid(s)\nPlanted": "KDE 53-5IIB",
       "Acres\nArea Planted": 215.0,
       "Planting \nDate": "April 1 2018",
       "Average\nPopulation": 28500.0,
@@ -273,8 +275,8 @@ const data = [
       "Total units (bags)": ""
   },
   {
-      "Field Name\nClient/ Farm": "subfield123",
-      "Hybrid(s)\nPlanted": "DKC64-34RIB\n",
+      "Field Name\nClient/ Farm": "Larry Page park",
+      "Hybrid(s)\nPlanted": "KDE-64-34RIB\n",
       "Acres\nArea Planted": 10.0,
       "Planting \nDate": "April 10",
       "Average\nPopulation": 26000.0,
@@ -288,8 +290,8 @@ const data = [
       "Total units (bags)": ""
   },
   {
-      "Field Name\nClient/ Farm": "subfield123",
-      "Hybrid(s)\nPlanted": "DKC55-84RIB",
+      "Field Name\nClient/ Farm": "Richard Hamming theme park",
+      "Hybrid(s)\nPlanted": "KDE55-84RIB",
       "Acres\nArea Planted": 4.0,
       "Planting \nDate": "April 15",
       "Average\nPopulation": 26000.0,
@@ -303,8 +305,8 @@ const data = [
       "Total units (bags)": ""
   },
   {
-      "Field Name\nClient/ Farm": "subfield123",
-      "Hybrid(s)\nPlanted": "DKC58-34RIB",
+      "Field Name\nClient/ Farm": "Von Neuman garden",
+      "Hybrid(s)\nPlanted": "KDE 58-34RIB",
       "Acres\nArea Planted": 4.0,
       "Planting \nDate": "April 15",
       "Average\nPopulation": 26000.0,
@@ -318,8 +320,8 @@ const data = [
       "Total units (bags)": ""
   },
   {
-      "Field Name\nClient/ Farm": "subfield123",
-      "Hybrid(s)\nPlanted": "P0574AMXT",
+      "Field Name\nClient/ Farm": "Werner Herzog inferno",
+      "Hybrid(s)\nPlanted": "P0574AXT",
       "Acres\nArea Planted": 4.0,
       "Planting \nDate": "April 25",
       "Average\nPopulation": 26000.0,
@@ -333,8 +335,8 @@ const data = [
       "Total units (bags)": ""
   },
   {
-      "Field Name\nClient/ Farm": "subfield123",
-      "Hybrid(s)\nPlanted": "P0589AMXT",
+      "Field Name\nClient/ Farm": "Twilio park",
+      "Hybrid(s)\nPlanted": "P0589MXT",
       "Acres\nArea Planted": 4.0,
       "Planting \nDate": "April 28",
       "Average\nPopulation": 26000.0,
@@ -348,8 +350,8 @@ const data = [
       "Total units (bags)": ""
   },
   {
-      "Field Name\nClient/ Farm": "subfield123",
-      "Hybrid(s)\nPlanted": "P1366AMXT",
+      "Field Name\nClient/ Farm": "Auth0 park",
+      "Hybrid(s)\nPlanted": "P136AMXT",
       "Acres\nArea Planted": 4.0,
       "Planting \nDate": "April 29",
       "Average\nPopulation": 26000.0,
@@ -366,13 +368,13 @@ const data = [
 
 
 const chartdemodata = [
-  { year: 'User 1', population: 2.525 },
-  { year: 'User 2', population: 3.018 },
-  { year: 'User 3', population: 3.682 },
-  { year: 'User 4', population: 4.440 },
-  { year: 'User 5', population: 5.310 },
-  { year: 'User 6', population: 6.127 },
-  { year: 'User 7', population: 6.930 },
+  { year: 'year 1', population: 2.525 },
+  { year: 'year 2', population: 3.018 },
+  { year: 'year 3', population: 3.682 },
+  { year: 'year 4', population: 4.440 },
+  { year: 'year 5', population: 5.310 },
+  { year: 'year 6', population: 6.127 },
+  { year: 'year 7', population: 6.930 },
 ];
 
 const options = {
@@ -418,8 +420,8 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-  createData('Seed A', 159, 6.0, 24, 4.0),
-  createData('Seed B', 237, 9.0, 37, 4.3),
+  createData('product A', 159, 6.0, 24, 4.0),
+  createData('product B', 237, 9.0, 37, 4.3),
   createData('Application C', 262, 16.0, 24, 6.0),
   createData('Equipment D', 305, 3.7, 67, 4.3),
   createData('Operator E', 356, 16.0, 49, 3.9),
@@ -435,8 +437,8 @@ const DenseTable=(props)=>{
         <TableHead>
           <TableRow>
             <TableCell> </TableCell>
-            <TableCell align="right">Acres</TableCell>
-            <TableCell align="right">Yield</TableCell>
+            <TableCell align="right">Area</TableCell>
+            <TableCell align="right">Harvest</TableCell>
             <TableCell align="right">Cost</TableCell>
             <TableCell align="right">Rainfall</TableCell>
           </TableRow>
@@ -461,6 +463,7 @@ const DenseTable=(props)=>{
   );
 }
 
+// this following html is prepared for the CKEditor 
 var contentdata = "<h2>Title: Worms in southeast corner of field XYZ</h2><p>Tag: worm&nbsp;</p><p>Note <comment id=\"b39dd790\" type=\"start\"></comment>awesome<comment id=\"b39dd790\" type=\"end\"></comment>1234, abc</p><p>Image:</p><figure class=\"image\"><img src=\"https://s3-us-west-2.amazonaws.com/climate-com/images/products/edit-prescription.png\"></figure>"
 
 
@@ -489,7 +492,7 @@ class ChartDemo extends React.PureComponent {
             valueField="population"
             argumentField="year"
           />
-          <Title text="Harvest by users" />
+          <Title text="Output by years" />
           <Animation />
           <EventTracker />
           <Tooltip />
@@ -506,18 +509,17 @@ export default function Report ({reporttype, cropseason, groupby}) {
     return (
       <>
         <div style={{ maxWidth: "100%" }}>
-        {/* <h1>{reporttype} / season: {cropseason} / by {groupby}</h1> */}
-        {/* <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> */}
-        {/* <h1>Report 1234</h1> */}
+        
+        
               <MUIDataTable
                   title={'Table: ' + t + ' (Random number:' + Math.random() + ')'}
                   data={data}
                   columns={columns}
                   options={options}
               />
-        {/* <Dashboard /> */}
-        </div>
         
+        </div>
+        {/* the following section is boilerplate code for rich text editor */}
         {/* removing the CKEditor  */}
         {/* <h1>Scouting Report with pre-populated notes</h1>
         <CKEditor

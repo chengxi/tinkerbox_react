@@ -32,7 +32,7 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 
 import CKEditor from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-var contentdata = "<h2>Title: My recommendations</h2><p>seed: xyz </p><p>Note 1234, abc</p><p>Image:</p><figure class=\"image\"><img src=\"https://s3-us-west-2.amazonaws.com/climate-com/images/products/edit-prescription.png\"></figure>"
+var contentdata = "<h2>Title: My recommendations</h2><p>seed: xyz </p><p>Note 1234, abc</p><p>Image:</p><figure class=\"image\"><img src=\"https://avatars1.githubusercontent.com/u/1913123\"></figure>"
 
 
 
@@ -207,22 +207,22 @@ export default function CheckboxesGroup() {
       <div className={classes.root}>
 
         <FormControl required error={error} component="fieldset" className={classes.formControl}>
-          <FormLabel component="legend">Select two customers</FormLabel>
+          <FormLabel component="legend">Select elephants</FormLabel>
           <FormGroup>
             <FormControlLabel
               control={<Checkbox checked={gilad} onChange={handleChange} name="gilad" />}
-              label="User Joe1"
+              label="Elephant Joe1"
             />
             <FormControlLabel
               control={<Checkbox checked={jason} onChange={handleChange} name="jason" />}
-              label="User Moe2"
+              label="Elephant Moe2"
             />
             <FormControlLabel
               control={<Checkbox checked={antoine} onChange={handleChange} name="antoine" />}
-              label="User Boo3"
+              label="Elephant Boo3"
             />
           </FormGroup>
-          <FormHelperText>Error message looks like this</FormHelperText>
+          <FormHelperText>Error looks like this</FormHelperText>
         </FormControl>
       </div>
     );
@@ -271,7 +271,7 @@ function Step3 () {
           
           
           <Typography variant="h4" gutterBottom>
-        Write your recommendations
+        Preview your recommendations
       </Typography>
         <CKEditor
         editor={ ClassicEditor }
