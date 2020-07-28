@@ -31,11 +31,11 @@ const progress_pie_data = [
 ];
 
 const multicrop_multiregion_progress = [
-  {"name": "region-1", "corn": 123, "sunflower": 213, "sorghum": 12, "soybeans": 200, "wheat": 41, "progress":[510, 800], "total_planted": 510, "total_remaining": 300},
-  {"name": "region-2", "corn": 123, "sunflower": 213, "sorghum": 12, "soybeans": 200, "wheat": 41, "progress":[200, 500], "total_planted": 200, "total_remaining": 200},
-  {"name": "region-3", "corn": 123, "sunflower": 213, "sorghum": 12, "soybeans": 200, "wheat": 41, "progress":[212, 300], "total_planted": 300, "total_remaining": 100},
-  {"name": "region-4", "corn": 123, "sunflower": 213, "sorghum": 12, "soybeans": 200, "wheat": 41, "progress":[112, 300], "total_planted": 100, "total_remaining": 100},
-  {"name": "region-5", "corn": 123, "sunflower": 213, "sorghum": 12, "soybeans": 200, "wheat": 41, "progress":[312, 320], "total_planted": 100, "total_remaining": 100},
+  {"name": "region-1", "popcorn": 123, "sunscreen": 213, "shoes": 12, "soymilk": 200, "flour": 41, "progress":[510, 800], "total_planted": 510, "total_remaining": 300},
+  {"name": "region-2", "popcorn": 123, "sunscreen": 213, "shoes": 12, "soymilk": 200, "flour": 41, "progress":[200, 500], "total_planted": 200, "total_remaining": 200},
+  {"name": "region-3", "popcorn": 123, "sunscreen": 213, "shoes": 12, "soymilk": 200, "flour": 41, "progress":[212, 300], "total_planted": 300, "total_remaining": 100},
+  {"name": "region-4", "popcorn": 123, "sunscreen": 213, "shoes": 12, "soymilk": 200, "flour": 41, "progress":[112, 300], "total_planted": 100, "total_remaining": 100},
+  {"name": "region-5", "popcorn": 123, "sunscreen": 213, "shoes": 12, "soymilk": 200, "flour": 41, "progress":[312, 320], "total_planted": 100, "total_remaining": 100},
 ];
 
 const harvest_equipment_daily_progress = [
@@ -65,13 +65,12 @@ function ChartGallery (props) {
             }}
           >
             <XAxis dataKey="yieldrange" >
-              <Label value="Avg Yield (bu/ac)" offset={-20} position="insideBottom" />
+              <Label value="Productivity" offset={-20} position="insideBottom" />
             </XAxis>
-            <YAxis label={{ value: 'Number of Fields', angle: -90, position: 'inside', textAnchor: 'insideLeft', offset: '-20'}}/>
+            <YAxis label={{ value: 'Number of workers', angle: -90, position: 'inside', textAnchor: 'insideLeft', offset: '-20'}}/>
             <Area dataKey="farmcount" stroke="#aaa" fill="#ddd">
               <LabelList dataKey="farmcount" position="top" offset={15} />
             </Area>
-            
             <Tooltip />
         </AreaChart>
       <BarChart width={600} height={200} data={progress_data} layout="vertical">
@@ -86,9 +85,7 @@ function ChartGallery (props) {
         </Bar>
         <Tooltip />
       </BarChart>
-      <PieChart width={200} height={200} >
-            <Pie data={progress_pie_data} fill="#bbb" label/>
-      </PieChart>
+      
       <ComposedChart layout="vertical" width={400} height={800} data={multicrop_multiregion_progress}
               margin={{top: 20, right: 20, bottom: 20, left: 20}}>
             <CartesianGrid stroke='#f5f5f5'/>
@@ -107,21 +104,21 @@ function ChartGallery (props) {
             </LabelList> 
             </Bar>
             
-            <Bar dataKey='corn' barSize={10} fill='#D9B918'>
-              <LabelList dataKey='corn' position='right'></LabelList>
+            <Bar dataKey='popcorn' barSize={10} fill='#D9B918'>
+              <LabelList dataKey='popcorn' position='right'></LabelList>
             </Bar>
-            <Bar dataKey='sunflower' barSize={10} fill='#A66C26'>
-            <LabelList dataKey='sunflower' position='right'></LabelList>
+            <Bar dataKey='sunscreen' barSize={10} fill='#A66C26'>
+            <LabelList dataKey='sunscreen' position='right'></LabelList>
             </Bar>
   
-            <Bar dataKey='sorghum' barSize={10} fill='#687312'>
-              <LabelList dataKey='sorghum' position='right'></LabelList>
+            <Bar dataKey='shoes' barSize={10} fill='#687312'>
+              <LabelList dataKey='shoes' position='right'></LabelList>
             </Bar>
-            <Bar dataKey='soybeans' barSize={10} fill='#324001'>
-              <LabelList dataKey='soybeans' position='right'></LabelList>
+            <Bar dataKey='soymilk' barSize={10} fill='#324001'>
+              <LabelList dataKey='soymilk' position='right'></LabelList>
             </Bar>
-            <Bar dataKey='wheat' barSize={10} fill='#023373'>
-              <LabelList dataKey='wheat' position='right'></LabelList> 
+            <Bar dataKey='flour' barSize={10} fill='#023373'>
+              <LabelList dataKey='flour' position='right'></LabelList> 
             </Bar>
         </ComposedChart>
   

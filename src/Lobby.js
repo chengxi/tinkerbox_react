@@ -1,5 +1,5 @@
 import React from 'react';
-
+// this is from a twilio tutorial, needed only for video conference 
 const Lobby = ({
   username,
   handleUsernameChange,

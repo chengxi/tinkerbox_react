@@ -86,30 +86,30 @@ export default function Reportv2 () {
      <div>
      <Breadcrumbs aria-label="breadcrumb">
      <FormControl className={classes.formControl}>
-        <InputLabel id="demo-simple-select-label">Report type</InputLabel>
+        <InputLabel id="demo-simple-select-label">Metrics type</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           value={reporttype}
           onChange={handleReporttypeChange}
         >
-          <MenuItem value={'planting'}>Planting</MenuItem>
-          <MenuItem value={'application'}>Application</MenuItem>
-          <MenuItem value={'yield'}>Yield</MenuItem>
+          <MenuItem value={'planting'}>Revenue</MenuItem>
+          <MenuItem value={'application'}>Cost</MenuItem>
+          <MenuItem value={'yield'}>Retention</MenuItem>
         </Select>
       </FormControl>
         
       <FormControl className={classes.formControl}>
-        <InputLabel id="demo-simple-select-label">Season</InputLabel>
+        <InputLabel id="demo-simple-select-label">Category</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           value={cropseason}
           onChange={handleReportSeason}
         >
-          <MenuItem value={'2019-corn'}>2019 Corn</MenuItem>
-          <MenuItem value={'2018-soybean'}>2018 Soybean</MenuItem>
-          <MenuItem value={'2017-canabis'}>2017 Cotton</MenuItem>
+          <MenuItem value={'2019-corn'}>Books</MenuItem>
+          <MenuItem value={'2018-soybean'}>Clothing</MenuItem>
+          <MenuItem value={'2017-canabis'}>Games</MenuItem>
         </Select>
       </FormControl>
 
@@ -121,9 +121,9 @@ export default function Reportv2 () {
           value={groupby}
           onChange={handleReportGroupby}
         >
-          <MenuItem value={'hybrid'}>Hybrid</MenuItem>
-          <MenuItem value={'field'}>Field</MenuItem>
-          <MenuItem value={'customer'}>Customer</MenuItem>
+          <MenuItem value={'hybrid'}>Color</MenuItem>
+          <MenuItem value={'field'}>Weight</MenuItem>
+          <MenuItem value={'customer'}>Price</MenuItem>
         </Select>
       </FormControl>
       {/* <Typography color="textPrimary">Breadcrumb</Typography> */}
