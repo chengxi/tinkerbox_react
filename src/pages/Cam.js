@@ -21,7 +21,7 @@ const styles = theme => ({
 // Injecting raw html test
 // Note: js in raw html is not loaded when browser render the page 
 function createMarkup() {
-    return {__html: '<!DOCTYPE html><html lang="en"><h1>Video Chat Room!</h1></html>'};
+    return {__html: '<!DOCTYPE html><html lang="en"><h1>Video Chat Room (Twilio)!</h1> <p> Local testing works but the token server does not work remotely</p> </html>'};
   }
   
   function MyComponent() {

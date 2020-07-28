@@ -109,7 +109,7 @@ export default function Reportv2 () {
         >
           <MenuItem value={'2019-corn'}>2019 Corn</MenuItem>
           <MenuItem value={'2018-soybean'}>2018 Soybean</MenuItem>
-          <MenuItem value={'2017-canabis'}>2017 Cannabis</MenuItem>
+          <MenuItem value={'2017-canabis'}>2017 Cotton</MenuItem>
         </Select>
       </FormControl>
 
