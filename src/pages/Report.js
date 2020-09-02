@@ -505,14 +505,15 @@ class ChartDemo extends React.PureComponent {
 
 
 export default function Report ({reporttype, cropseason, groupby}) {
-    const t = reporttype + " / " + cropseason + " / " + groupby ;
+    // const t = reporttype + " / " + cropseason + " / " + groupby ;
+    const tabletitile = 'metrics for X';
     return (
       <>
         <div style={{ maxWidth: "100%" }}>
         
         
               <MUIDataTable
-                  title={'Table: ' + t + ' (Random number:' + Math.random() + ')'}
+                  title={'Table: ' + tabletitile + ' (Random number:' + Math.random() + ')'}
                   data={data}
                   columns={columns}
                   options={options}

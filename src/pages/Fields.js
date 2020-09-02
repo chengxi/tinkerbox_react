@@ -32,7 +32,7 @@ function Fields(props) {
       <CssBaseline />
       
       <Container maxWidth="sm">
-        <h1>My Fields</h1>
+        <h1>My Gardens</h1>
         <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
       </Container>
     </div>

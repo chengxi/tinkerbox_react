@@ -24,7 +24,6 @@ import AssessmentIcon from '@material-ui/icons/Assessment';
 import MapIcon from '@material-ui/icons/Map';
 import SettingsIcon from '@material-ui/icons/Settings';
 import HelpIcon from '@material-ui/icons/Help';
-import PeopleIcon from '@material-ui/icons/People';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';

@@ -130,7 +130,7 @@ export default function Reportv2 () {
     </Breadcrumbs>
     
     <Summary gutterBottom/>
-    <Dummytable reporttype={reporttype} cropseason={cropseason} groupby={groupby}/>
+    {/* <Dummytable reporttype={reporttype} cropseason={cropseason} groupby={groupby}/> */}
     {/* <Dummyblock reporttype={reporttype} cropseason={cropseason} groupby={groupby}/> */}
     <Report reporttype={reporttype} cropseason={cropseason} groupby={groupby}/>
     

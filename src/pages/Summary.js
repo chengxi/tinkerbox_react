@@ -45,7 +45,7 @@ export default function Summary() {
                     {Math.trunc(Math.random()* 100)} 
                 </Typography>
                 <Typography variant='subtitle2'>
-                    Hybrids planted
+                    Customers
                 </Typography>
               </CardContent>
         </Card>
@@ -56,7 +56,7 @@ export default function Summary() {
                     {Math.trunc(Math.random()* 1000)} 
                 </Typography>
                 <Typography variant='subtitle2'>
-                    Acres harvested
+                    Purchases
                 </Typography>
               </CardContent>
         </Card>
@@ -66,17 +66,17 @@ export default function Summary() {
                     {Math.trunc(Math.random()* 100)} % 
                 </Typography>
                 <Typography variant='subtitle2'>
-                    Average moisture
+                    Conversion
                 </Typography>
               </CardContent>
         </Card>
         <Card >
               <CardContent>
                 <Typography variant='h5' className={classes.title} color="textSecondary" gutterBottom>
-                    {Math.trunc(Math.random()* 1000 / 2)} bu/ac
+                    {Math.trunc(Math.random()* 1000 / 2)} 
                 </Typography>
                 <Typography variant='subtitle2'>
-                    Average Yield
+                    Baggages
                 </Typography>
               </CardContent>
         </Card>
@@ -86,7 +86,7 @@ export default function Summary() {
                 {Math.trunc(Math.random()* 1000 / 2)}
                 </Typography>
                 <Typography variant='subtitle2'>
-                    Random number
+                    RandNumber
                 </Typography>
               </CardContent>
         </Card>
