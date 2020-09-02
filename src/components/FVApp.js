@@ -243,7 +243,7 @@ export default function FVApp() {
             <ListItemIcon>
                 <MapIcon />
               </ListItemIcon>
-            <ListItemText>My areas</ListItemText>
+            <ListItemText>My Gardens</ListItemText>
           </ListItem>
           <ListItem
               button
