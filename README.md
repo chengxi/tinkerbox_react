@@ -20,13 +20,17 @@ This is a typical React app created using create-react-app script. To start the 
 6. Rich-text editor - CKEditor 
 7. Dynamic tables (export, print, sort, filter, grouping, nest records, etc.) - DevExpress Grid, Material table (you can also try TabulatorJS) 
 8. Data visualization (ReChart) 
-9. Deployment (AWS amplify) 
+9. Deployment (AWS amplify) https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/module-one/
 
 ## ToDos
 1. local db (sqlite) 
 2. server side functions (Flask / Node) 
 3. Auth using Firebase 
 4. Mapbox for map view 
-5. Split and comment code for better re-use 
-
+5. Split and comment the code for better re-usability 
+6. Real-time editing framework for document and non-document
+7. Chatbot (potentially Intercom) 
+8. Pinterest-like collection 
+9. Screenshots and annotations 
+10. Integration with other nocode/lowcode 
  
