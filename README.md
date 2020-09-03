@@ -2,7 +2,7 @@
 
 This is a typical React app created using create-react-app script. To start the app: 
 1. clone the repo
-2. npm install all the dependencies 
+2. npm install all the dependencies (for some services, you need to create an account for the API key) 
 3. npm start 
 
 ## The purpose of this repo 
@@ -16,21 +16,22 @@ This is a typical React app created using create-react-app script. To start the 
 2. Front-end framework - ReactJS
 3. Navigation - material selection, drawer, client-side routing 
 4. Authentication and user identities - Auth0 (need account for API key) 
-5. Video chat - Twilio (need account for API key) 
+5. Video chat - Twilio (need account for API key, works locally)
 6. Rich-text editor - CKEditor 
 7. Dynamic tables (export, print, sort, filter, grouping, nest records, etc.) - DevExpress Grid, Material table (you can also try TabulatorJS) 
 8. Data visualization (ReChart) 
-9. Deployment (AWS amplify) https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/module-one/
+9. Deployment (AWS amplify) 
 
 ## ToDos
-1. local db (sqlite) 
-2. server side functions (Flask / Node) 
+1. local DB (sqlite), cloud DB (RDS, GraphQL)
+2. server functions (Flask or Node) 
 3. Auth using Firebase 
-4. Mapbox for map view 
-5. Split and comment the code for better re-usability 
-6. Real-time editing framework for document and non-document
-7. Chatbot (potentially Intercom) 
-8. Pinterest-like collection 
+4. Mapbox or Google Map for map view 
+5. Split the code for better re-usability 
+6. Real-time editing framework for document and non-document (I haven't found a framework for non-document yet) 
+7. Chatbot, discussion (potentially Intercom, Discord) 
+8. Pinterest-like or Trello-like collection with drag-and-drop 
 9. Screenshots and annotations 
-10. Integration with other nocode/lowcode 
- 
+10. Integration with other nocode/lowcode tool for faster build up (Notion, Dropbox, Contentful, Stripe, sharing buttons, for example) 
+11. Full-text search (potentially ElasticSearch) 
+
