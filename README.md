@@ -4,6 +4,8 @@ This is a typical React app created using create-react-app script. To start the 
 1. clone the repo
 2. npm install all the dependencies (for some services, you need to create an account for the API key) 
 3. npm start 
+Demo on AWS amplify
+https://master.d3fc41pzxyh539.amplifyapp.com/report2
 
 ## The purpose of this repo 
 1. an skeleton app for prototyping (e.g. proof of concept, mockup UX/Navigation, hackathon, glue things together) 
