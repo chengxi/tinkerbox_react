@@ -16,31 +16,39 @@ https://master.d3fc41pzxyh539.amplifyapp.com/
 3. a playground that is more complex than stackoverflow/codesandbox examples, but easier to understand than a production application. 
 
 ## Requirements for this repo 
-1. users can interact with the result 
-2. a non-developer can set it up and add new function easily (<2 hrs) 
+* users can interact with the result 
+* a non-developer can set it up in 1 hour
+* a non-developer can add new function easily
 
 ## A few main components 
-1. Styling - Material UI 
-2. Front-end framework - ReactJS
-3. Navigation - material selection, drawer, client-side routing 
-4. Authentication and user identities - Auth0 (need account for API key) 
-5. Video chat - Twilio (need account for API key, works locally)
-6. Rich-text editor - CKEditor 
-7. Dynamic tables (export, print, sort, filter, grouping, nest records, etc.) - DevExpress Grid, Material table (you can also try TabulatorJS) 
-8. Data visualization (ReChart) 
-9. Deployment (AWS amplify) 
+* Styling - Material UI 
+* Front-end - ReactJS
+* Navigation - (Material)selection, drawer, stepper, client-side routing 
+* Authentication and user identities - Auth0 (this requires an API key) 
+* Video chat - Twilio (this requires an API key)
+* Rich-text editor - CKEditor 
+* Dynamic tables (export, print, sort, filter, grouping, nest records, etc.) - DevExpress Grid, Material table (you can also try TabulatorJS) 
+* Data visualization (ReChart) 
+* Deployment (AWS amplify) 
 
 ## To Dos
-1. Server functions (Flask or Node) 
-2. Mapbox or Google Map for map view 
-3. Split the code for better re-usability 
-4. In-product chat and threaded discussion (potentially Intercom, Discord) 
-5. Pinterest-like or Trello-like collection with drag-and-drop 
-6. Screenshots and annotations 
-7. Integration with other nocode/lowcode tool for faster build up (Notion, Dropbox, Contentful, Stripe, sharing buttons, for example) 
-8. Full-text search (potentially ElasticSearch) 
+### Integration features 
+* Server functions (Flask or Node) - this is for more complex backend (DB, API integrations) 
+* Mapbox or Google Map for map view 
+* In-product chat and threaded discussion (potentially Intercom, Discord, Twilio) 
+* Integration with other nocode/lowcode tool for faster build up (Contentful, Stripe, sharing buttons, for example) 
+* Full-text search (potentially ElasticSearch) 
+
+### New features 
+* Trello-like collection/boards with drag-and-drop cards
+* Screenshot of entire or partial page and make threaded comment in-context  
+* Audio/video synchronized with page structure
+
+### Improvements 
+* Split the code for better re-usability 
+* Find a simpler deployment tool
 
 ## I am still looking for solutions for the following 
-1. Real-time editing for non-document (e.g. Google doc experience for polygons) 
+* Real-time editing for non-document (e.g. Google doc experience for polygons, workflow graph) 
 
 
