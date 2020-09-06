@@ -95,7 +95,7 @@ function ChartGallery (props) {
             <Legend layout='vertical' algin='left'/>
             {/* <Area dataKey='progress' stroke="#8884d8" fill="#8884d8" /> */}
             <Bar dataKey='total_planted' barSize={30}  stackId='a' fill="#82ca9d">
-            <LabelList dataKey='total_planted' position='insideRight'>
+            <LabelList dataKey='total_work' position='insideRight'>
             </LabelList> 
             </Bar>
   
@@ -131,10 +131,10 @@ function ChartGallery (props) {
           <Tooltip/>
           
           <Bar  xAxisId='harvest' dataKey='equipment' barSize={20} fill="#ddd">
-          <LabelList dataKey='equipment' position='right'>
+          <LabelList dataKey='worker machines' position='right'>
             </LabelList> 
           </Bar>
-          <ReferenceLine xAxisId='harvest' x={0} strokeWidth={10} stroke='#666'/>
+          <ReferenceLine xAxisId='work progress' x={0} strokeWidth={10} stroke='#666'/>
       </ComposedChart >
   {/* end of equipment chart */}
   {/* date chart in the middle */}
@@ -171,8 +171,6 @@ function ChartGallery (props) {
       {/* trying to merge the two chart */}
       
       {/* end of merge */}
-      
-  
       </>
     );
    } //end if props tue 
