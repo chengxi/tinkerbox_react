@@ -6,7 +6,6 @@ import {Container} from '@material-ui/core';
 
 // yield distribution data for area chart ()
 const yield_distribution = [
-
               {"yieldrange": '0-50',    "farmcount":0}, 
               {"yieldrange": '51-100',  "farmcount":0},
               {"yieldrange": '101-150', "farmcount":11},
@@ -95,7 +94,7 @@ function ChartGallery (props) {
             <Legend layout='vertical' algin='left'/>
             {/* <Area dataKey='progress' stroke="#8884d8" fill="#8884d8" /> */}
             <Bar dataKey='total_planted' barSize={30}  stackId='a' fill="#82ca9d">
-            <LabelList dataKey='total_work' position='insideRight'>
+            <LabelList dataKey='total_remaing' position='insideRight'>
             </LabelList> 
             </Bar>
   
@@ -122,7 +121,7 @@ function ChartGallery (props) {
             </Bar>
         </ComposedChart>
   
-      <ComposedChart layout="vertical" width={300} height={300} data={harvest_equipment_daily_progress} syncId='harvest_equipment_daily'
+        <ComposedChart layout="vertical" width={300} height={300} data={harvest_equipment_daily_progress} syncId='harvest_equipment_daily'
             margin={{top: 20, right: 0, bottom: 20, left: 20}}>
           <CartesianGrid stroke='#f5f5f5'/>
           <Legend verticalAlign='top'  algin='left'/>
@@ -131,12 +130,13 @@ function ChartGallery (props) {
           <Tooltip/>
           
           <Bar  xAxisId='harvest' dataKey='equipment' barSize={20} fill="#ddd">
-          <LabelList dataKey='worker machines' position='right'>
+          <LabelList dataKey='equipment' position='right'>
             </LabelList> 
           </Bar>
-          <ReferenceLine xAxisId='work progress' x={0} strokeWidth={10} stroke='#666'/>
+          <ReferenceLine xAxisId='harvest' x={0} strokeWidth={10} stroke='#666'/>
       </ComposedChart >
   {/* end of equipment chart */}
+
   {/* date chart in the middle */}
       {/* <ComposedChart layout="vertical" width={40} height={300} data={harvest_equipment_daily_progress} syncId='harvest_equipment_daily'
             margin={{top: 20, right: 30, bottom: 20, left: 30}}>
@@ -148,7 +148,7 @@ function ChartGallery (props) {
               <Bar dataKey="low" stackId="a" fill="#82ca9d" />
               
       </ComposedChart> */}
-  {/* date chart */}
+  {/* end of date chart */}
       
       <ComposedChart layout="vertical" width={300} height={300} data={harvest_equipment_daily_progress} syncId='harvest_equipment_daily'
             margin={{top: 20, right: 20, bottom: 20, left: 10}}>
