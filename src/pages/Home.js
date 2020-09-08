@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
+import { Typography } from "@material-ui/core";
 // import AddIcon from "@material-ui/icons/Add";
 // import Icon from "@material-ui/core/Icon";
 // import DeleteIcon from "@material-ui/icons/Delete";
@@ -20,9 +21,20 @@ const FlatButtons = props => {
   return (
     <div>
       <div>
-        <h1>
-          Hello Home
-        </h1>
+        <Typography variant='h3'>
+          {/* congrats, you found me! */}
+          Home here
+        </Typography>
+        
+        <Typography variant='body1'>
+          {/* congrats, you found me! */}
+          No login needed. 
+          To add stuff here, see 'Home.js'. 
+          To see how other feature works, click around, and check how main app route to each feature under '/pages/'
+        </Typography>
+          
+
+        
       </div>
     </div>
   );
