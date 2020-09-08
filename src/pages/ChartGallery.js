@@ -2,7 +2,7 @@ import * as React from 'react';
 import { AreaChart, Area, XAxis, YAxis, LabelList, Tooltip, ComposedChart, Brush } from 'recharts';
 import { BarChart, Bar, Label, CartesianGrid } from 'recharts';
 import { PieChart, Pie, Line, ReferenceLine, Legend, CartesianAxis} from 'recharts';
-import {Container} from '@material-ui/core';
+import {Container, Typography} from '@material-ui/core';
 
 // yield distribution data for area chart ()
 const yield_distribution = [
@@ -55,6 +55,9 @@ function ChartGallery (props) {
   if (props.show) {
     return (
       <>
+      <Typography variant='h5'>
+        Lots of charts (by ReChart)
+      </Typography>
       <AreaChart
             width={600}
             height={200}
