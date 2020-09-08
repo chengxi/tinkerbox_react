@@ -46,7 +46,7 @@ const Dummysubtable = ({reporttype, cropseason, groupby, num}) => {
     }
     return (
         <div>
-            <h1>{reporttype} / season: {cropseason} / by {groupby} / {myName()}</h1>
+            <h1>{reporttype} / subcategory: {cropseason} / subgroup by {groupby} / {myName()}</h1>
             {/* <h2>{id}</h2> */}
         </div>
     );
