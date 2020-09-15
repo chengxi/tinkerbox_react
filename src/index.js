@@ -27,6 +27,7 @@ ReactDOM.render(
   <>
   {/* removed strict mode due to dev tool warning 7/10 */}
       <CssBaseline />
+      
       <Auth0Provider
           domain={config.domain}
           client_id={config.clientId}
