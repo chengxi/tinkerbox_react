@@ -1,6 +1,7 @@
 # Tinkerbox React - a prototyping tool for non-developers 
 
 This is a typical React app created using create-react-app script. To start the app: 
+0. before setting up: install brew, github cli/account, npm
 1. clone the repo
 2. npm install all the dependencies (for some services, you need to create an account for the API key) 
 3. npm start (the web app should be available on localhost)
